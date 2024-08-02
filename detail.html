@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link rel="stylesheet" href="Detail.css">
+</head>
+<body>
+      <section class="main-div">
+        <div class="card">
+            <div class="image-div">
+                <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="bottom-content">
+               <div class="first-content">
+                <div class="name-div">
+                    <h2>Place Name</h2>
+                </div>
+                <div class="second-content">
+                    <p>Country name</p>
+                    <p>PriceBEd</p>
+                </div>
+                <div class="third-div">
+                    <h1>Location</h1>
+                    <p><i>Mahallah balarkhel Zaida Swabi</i> </p>
+                </div>
+                <div class="fourth-div">
+                    <h1>Description</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos molestias perferendis veritatis nostrum soluta neque, dolore labore aperiam animi blanditiis nam recusandae magnam itaque? Sequi saepe commodi cupiditate adipisci voluptatibus pariatur eius accusantium obcaecati at quod. Beatae consequatur explicabo accusamus quam molestias sed eos quae dolorem, earum amet facilis, voluptas nobis id expedita placeat vel totam aperiam mollitia nulla, illum quidem doloribus corrupti aspernatur? Tempore! </p>
+                </div>
+                <div class="button-div">
+                    <a href="" class="Edit">Edit</a>
+                    <a href="" class="Delete">Delete</a>
+                </div>
+               </div>
+            </div>
+        </div> 
+        <section class="rating-main-section">
+            <h3>Please leave a review</h3>
+            <form action="" method="post">
+         <div class="rating">
+    <input type="radio" id="star5" name="rating" value="5">
+    <label for="star5">&#9733;</label>
+    <input type="radio" id="star4" name="rating" value="4">
+    <label for="star4">&#9733;</label>
+    <input type="radio" id="star3" name="rating" value="3">
+    <label for="star3">&#9733;</label>
+    <input type="radio" id="star2" name="rating" value="2">
+    <label for="star2">&#9733;</label>
+    <input type="radio" id="star1" name="rating" value="1">
+    <label for="star1">&#9733;</label>
+</div>
+
+<div class="rating-value" id="rating-result"></div>
+<div class="textarea-rating-div">
+    <label for="feedback">Enter your feedback</label>
+    <textarea name="feedback" id="feedback"></textarea>
+    <button>submit</button>
+</div>
+
+</form>
+</section>
+
+</div>
+</body>
+<script>
+
+    const stars = document.querySelectorAll('input[name="rating"]');
+    const ratingResult = document.getElementById('rating-result');
+    const textareadiv = document.getElementsByClassName("textarea-rating-div")[0];
+    stars.forEach(star => {
+        star.addEventListener('change', function() {
+            console.log(this.value);
+            textareadiv.style.display = "flex";
+            ratingResult.innerHTML = "";
+            if (this.checked) {
+                if (this.value == 1 || this.value == 2) {
+                    ratingResult.innerHTML = "Bad";
+                    textareadiv.style.display = "flex";
+                } else if (this.value == 3) {
+                    ratingResult.innerHTML = "Average";
+                    textareadiv.style.display = "flex";
+                } else if (this.value > 3) {
+                    ratingResult.innerHTML = "Excellent";
+                    textareadiv.style.display = "flex";
+                } else {
+                    textareadiv.style.display = "none";
+                }
+            }
+        });
+    });
+</script>
+
+</html>

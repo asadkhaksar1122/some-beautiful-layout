@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Add Post</h3>
+        <form action="">
+            <div class="maininput">
+            <div class="inputdiv">
+                <label for="name">Name</label>
+                <input type="text" minlength="5" name="Name" id="Name" placeholder="Name">
+            
+            </div>
+            <div class="inputdiv">
+                <label for="Country">Country</label>
+                <input type="text" maxlength="6" name="Country" id="Country" placeholder="Country">
+            </div>
+            <div class="inputdiv">
+                <label for="Location">Location</label>
+                <input type="text" name="Location" id="Location" placeholder="Location">
+            </div>
+          
+            <div class="inputdiv">
+                <label for="Price">Price</label>
+                <input type="number" name="Price" id="Price" placeholder="Price">
+            </div>
+              <div class="inputdiv area">
+                <label for="area">Description</label>
+             <textarea name="area" placeholder="Description" id="area" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+            <button class="btn">Add</button>
+        </form>
+    </div>
+</body>
+</html>

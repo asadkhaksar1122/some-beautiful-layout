@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.main-section{
+   margin-top: 12px;
+    width: 80%;
+ background-color: aliceblue;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-left: auto;
+   margin-right: auto;
+   box-shadow: 10px 10px 10px rgb(138, 182, 231);
+  font-family: "Poppins", sans-serif;
+}
+
+.firstheading-div h1{
+    line-height: 0px;
+        font-size: 9rem;
+        color: rgb(119, 207, 207);
+}
+.second-heading h1{
+    font-size: 4rem;
+           color: rgb(119, 207, 207);
+           line-height: 0px;
+}
+.content-div{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.errorbutton-div{
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+.errorbutton-div a{
+    border: 2px solid black;
+    padding: 13px 10px;
+    margin-right: 50px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+   border-radius: 6px;
+   transition: all 0.2s ease;
+}
+.errorbutton-div a:hover{
+    background-color: rgb(27, 92, 92);
+color: white;
+}
+@media(max-width:950px){
+    .second-heading h1{
+        font-size: 3rem;
+    }
+}
+@media(max-width:660px){
+    .main-section{
+        width: 98%;
+    }
+}
+@media(max-width:530px){
+    .second-heading h1{
+        font-size: 2rem;
+    }
+    .errorbutton-div a{
+        margin-right: 12px;
+    }
+}

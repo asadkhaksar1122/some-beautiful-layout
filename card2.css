@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.card{
+    display: inline-block;
+    width: 500px;
+    background-color: aliceblue;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+margin-left: 23px;
+    font-weight: weight;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0,0.3);
+}
+.cardimage{
+    width: 100%;
+}
+.cardimage img{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+.secondcontent .title{
+    font-size: 23px;
+}
+.author{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+.secondcontent .description{
+    font-size: 13px;
+}
+.author .authorinf{
+    margin-left: 4px;
+}
+.author .authorimage{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.author .authorinf p{
+    line-height: 5px;
+}
+.author .authorimage img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.author .authorname{
+    color: rgb(15, 0, 0);
+    font-weight: bold;
+}
+.author .date{
+    font-size: 12px;
+    color: rgb(224, 86, 86);
+}
+.preloader{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    background-image:url("backgroundgif.gif");
+    background-repeat: no-repeat;
+    background-size: 180px;
+    background-position: center;
+    z-index: 100000;
+}

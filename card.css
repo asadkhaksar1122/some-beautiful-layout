@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-color:whitesmoke;
+}
+.main-div{
+    display: flex ;
+    flex-wrap: wrap;
+justify-content: space-between;
+}
+.card{
+    
+      width: 35rem;
+      box-shadow: 10px 10px 5px #CCCCFF;
+    background-color: white;
+    font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  height: auto;
+  margin: 6px 8px;
+
+  
+  
+}
+
+.image-div{
+    width: 100%;
+    
+}
+.image-div img{
+    width: 100%;
+object-fit: cover;
+border-radius: 36px;
+}
+.name-div h2{
+    text-align: center;
+    line-height: 1px;
+}
+.second-content{
+    padding: 0px 6px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+}
+.button-div a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background-color: green;
+    padding: 10px 20px;
+    border-radius: 12px;
+
+}
+.button-div{
+    text-align: center;
+}
+@media (max-width:850px) {
+    .card{
+        width: 98%;
+    }
+}
